@@ -970,6 +970,122 @@ section,
 }
 
 /*--------------------------------------------------------------
+# SobreN Section
+--------------------------------------------------------------*/
+.sobren {
+  --background-color: color-mix(in srgb, var(--alt-background-color), transparent 95%);
+}
+
+.sobren .nav-sobren {
+  text-align: center;
+  margin: auto;
+  display: block;
+  border-bottom: 0;
+  margin-bottom: 30px;
+}
+
+.sobren .nav-sobren li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.sobren .nav-sobren a {
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: var(--heading-color);
+  color: var(--contrast-color);
+  padding: 10px 100px;
+}
+
+@media (max-width: 991px) {
+  .sobren .nav-sobren a {
+    padding: 8px 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sobren .nav-sobren a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobren .nav-sobren a {
+    padding: 8px 30px;
+  }
+}
+
+.sobren .nav-sobren a.active {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.sobren .sub-heading {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto 30px auto;
+}
+
+@media (min-width: 991px) {
+  .sobren .sub-heading {
+    width: 75%;
+  }
+}
+
+.sobren .tab-pane {
+  transition: ease-in-out 0.2s;
+}
+
+.sobren .schedule-item {
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+.sobren .schedule-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.sobren .schedule-item .speaker {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.sobren .schedule-item .speaker img {
+  height: 100%;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  transition: all ease-in-out 0.3s;
+}
+
+.sobren .schedule-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sobren .schedule-item h4 span {
+  font-style: italic;
+  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.sobren .schedule-item p {
+  font-style: italic;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
 .speakers {
